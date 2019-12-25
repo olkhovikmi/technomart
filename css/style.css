@@ -1,0 +1,167 @@
+/* Подключение шрифтов */
+@font-face {
+  font-family: "Cuprum";
+  src: url("/fonts/cuprum.woff2") format("woff2"),
+    url("/fonts/cuprum.woff") format("woff");  
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Cuprum";
+  src: url("/fonts/cuprumbold.woff2") format("woff2"),
+    url("/fonts/cuprumbold.woff") format("woff");  
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Cuprum";
+  src: url("/fonts/cuprumbolditalic.woff2") format("woff2"),
+    url("/fonts/cuprumbolditalic.woff") format("woff");
+  font-style: italic;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Cuprum";
+  src: url("/fonts/cuprumitalic.woff2") format("woff2"),
+    url("/fonts/cuprumitalic.woff") format("woff");
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "PTSans";
+  src: url("/fonts/ptsans.woff2") format("woff2"),
+    url("/fonts/ptsans.woff") format("woff");  
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "PTSans";
+  src: url("/fonts/ptsansbold.woff2") format("woff2"),
+    url("/fonts/ptsansbold.woff") format("woff");  
+  font-weight: 700;
+}
+/********************* BODY *********************/
+
+body {
+  margin: 0;
+  padding: 0;  
+  font-family: "Cuprum", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #ffffff;
+}
+
+/********************* HEADER *********************/
+
+.box-nav {
+  width: 100%;
+  background-color: #293449;
+}
+
+.header {
+  background-color: #f4f7f9;
+}
+
+.wrap {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.top-link {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;  
+}
+
+.nav {
+  position: relative;
+}
+
+.logo-item {  
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 16px 55px;
+  font-family: "Cuprum", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
+  background-color: #ee3643;
+  z-index: 1;
+}
+
+.search-item {
+  position: relative;
+}
+
+.search-item input {  
+  width: 270px; 
+  padding: 14px 0 14px 49px;   
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.search-item input::placeholder {
+  color: #ffffff;
+  font-family: "Cuprum", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 15px;
+}
+
+.btn-search {
+  position: absolute; 
+  top: 10px;
+  left: 10px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.bookmarks-item,.cart-item,
+.checkout-item {
+  width: 16%;
+}
+
+.btn-bm {  
+  padding: 14px 28px 14px 44px;
+  color: #ffffff;
+  line-height: 19px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-cart {
+  padding: 14px 31px 14px 49px;
+  color: #ffffff;
+  line-height: 19px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-chechuot {
+  padding: 14px 21px;
+  color: #ffffff;
+  line-height: 19px;
+  background-color: #5fbb2d;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+
