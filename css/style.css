@@ -56,7 +56,7 @@ body {
 
 /********************* HEADER *********************/
 
-.box-nav {
+.box-top {
   width: 100%;
   background-color: #293449;
 }
@@ -96,22 +96,64 @@ body {
   box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
   z-index: 1;
+  cursor: pointer;
+}
+
+.logo-item:hover {
+  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
+  background-color: #ca2c37;
+}
+
+.logo-item:active {
+  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
+  background-color: #ba2732;
+}
+
+.logo-item a {
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .search-item {
   position: relative;
 }
 
-.search-item input {  
+.search-item label {
+  position: absolute;
+  display: inline-block;  
+  top: 15px;
+  left: 18px;
+  width: 17px;
+  height: 17px;
+  background-image: url("/img/icon-search.png");
+  background-repeat: no-repeat;
+  opacity: 0.3;  
+}
+
+.search-item input[type="search"] {  
   width: 270px; 
   padding: 14px 0 14px 49px;   
   background-color: transparent;
-  border: none;
-  outline: none;
+  border: none; 
+  outline: none; 
   cursor: pointer;
 }
 
-.search-item input::placeholder {
+input[type="search"]:hover + label {  
+  opacity: 1;
+}
+
+.search-item input[type="search"]:focus {  
+  background-color: #ffffff;
+}
+
+input[type="search"]:focus + label {   
+  background-image: url("/img/icon-search-red.png");
+  background-repeat: no-repeat;
+} 
+
+input[type="search"]::placeholder {
   color: #ffffff;
   font-family: "Cuprum", sans-serif;
   font-size: 17px;
@@ -119,23 +161,93 @@ body {
   line-height: 15px;
 }
 
-.btn-search {
-  position: absolute; 
-  top: 10px;
-  left: 10px;
-  background-color: transparent;
-  border: none;
-  outline: none;
-  cursor: pointer;
+.top-link a {
+  display: inline-block;
+  text-decoration: none;
 }
 
 .bookmarks-item,.cart-item,
 .checkout-item {
+  position: relative;
   width: 16%;
+  padding: 14px 0;
+  text-align: center;
 }
 
-.btn-bm {  
-  padding: 14px 28px 14px 44px;
+.bookmarks-item a::before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  top: 15px;
+  left: 10px;
+  width: 14px;
+  height: 16px;
+  background-image: url("/img/icon-bookmark_копия_3.png");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.bookmarks-item:hover a::before {
+  opacity: 1;
+}
+
+.bookmarks-item:hover {
+  background-color: #212a3a;
+}
+
+.bookmarks-item:active a::before {
+  opacity: 0.5;
+}
+
+.bookmarks-item:active {
+  background-color: #161d29;
+  opacity: 0.5;
+}
+
+.cart-item a::before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  top: 15px;
+  left: 10px;
+  width: 14px;
+  height: 16px;
+  background-image: url("/img/cart-icon_копия_2.png");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.cart-item:hover a::before {
+  opacity: 1;
+}
+
+.cart-item:hover {
+  background-color: #212a3a;
+}
+
+.cart-item:active a::before {
+  opacity: 0.5;
+}
+
+.cart-item:active {
+  background-color: #161d29;
+  opacity: 0.5;
+}
+
+.checkout-item {
+  background-color: #63a63e;
+}
+
+.checkout-item:hover {
+  background-color: #5fbb2d;
+}
+
+.checkout-item:active {
+  background-color: #518534;
+  opacity: 0.5;
+}
+
+.btn-bm {    
   color: #ffffff;
   line-height: 19px;
   background-color: transparent;
@@ -144,8 +256,7 @@ body {
   cursor: pointer;
 }
 
-.btn-cart {
-  padding: 14px 31px 14px 49px;
+.btn-cart {  
   color: #ffffff;
   line-height: 19px;
   background-color: transparent;
@@ -155,10 +266,8 @@ body {
 }
 
 .btn-chechuot {
-  padding: 14px 21px;
   color: #ffffff;
-  line-height: 19px;
-  background-color: #5fbb2d;
+  line-height: 19px;  
   border: none;
   outline: none;
   cursor: pointer;
