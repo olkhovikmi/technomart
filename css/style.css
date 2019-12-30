@@ -79,7 +79,7 @@ body {
   list-style: none;  
 }
 
-.nav {
+.top-nav {
   position: relative;
 }
 
@@ -273,4 +273,154 @@ input[type="search"]::placeholder {
   cursor: pointer;
 }
 
+.middle-menu {
+  padding: 45px 0 45px 50px;
+  display: flex;
+  justify-content: flex-start;  
+}
 
+.description-menu {
+  width: 23%;
+  margin: 0;
+  margin-right: 60px;
+  color: #ee3643;
+  font-family: "Cuprum", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 23px;
+}
+
+
+.box-tel {
+  width: 30%;
+  margin-right: 72px;
+}
+
+.tel {
+  position: relative;
+  margin: 0;  
+  margin-bottom: 10px;
+  padding: 11px 0 11px 74px; 
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #ee3643;
+  border: 3px solid #ffffff;
+}
+
+.tel::before {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  width: 19px;
+  height: 19px;
+  content: "";
+  background-image: url("/img/icon-phone.png");
+  background-repeat: no-repeat;
+}
+
+.address {
+  color: #32425c;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.authorization a {
+  display: inline-block;
+  padding: 14px 0;
+  font-size: 21px;  
+  line-height: 16px;
+  color: #000000;
+  vertical-align: top;
+  text-decoration: none;
+  background-color: #ffffff;
+}
+
+.authorization a:hover {
+  color: #ee3643;
+}
+.authorization a:active {
+  color: #c5c5c5;
+  
+}
+
+.authorization .enter {
+  position: relative;
+  width: 120px;
+  margin-right: 10px;
+  padding-left: 48px;
+  box-sizing: border-box;
+}
+
+.authorization .enter::before {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  display: inline-block;
+  width: 20px;
+  height: 17px;
+  content: "";
+  background-image: url("/img/icon-login.png");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.authorization .enter:hover::before {
+  opacity: 1;
+}
+
+.authorization .enter:active::before {
+  opacity: 0.3;
+}
+
+.authorization .registration {
+  width: 150px;
+  text-align: center;
+}
+
+.bottom-nav {    
+  padding-bottom: 60px;
+}
+
+.list-nav {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;  
+  list-style: none;
+  box-shadow: inset 0 -5px 0 #293449;
+  background-color: #32425c;
+}
+
+.item-nav {
+  width: 15%;  
+  padding: 23px 31px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.item-nav:first-child {
+  padding-left: 50px;
+}
+
+.item-nav:last-child {
+  padding-right: 50px;
+}
+
+.item-nav:hover {
+  background-color: #293449;  
+}
+
+.item-nav:active {
+  background-color: #1d2739; 
+}
+
+.item-nav a {
+  color: #ffffff;
+  line-height: 12px;
+  text-decoration: none;
+}
+
+.item-nav a:active {
+ color: #757b86;
+}
