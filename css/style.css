@@ -54,6 +54,10 @@ body {
   background-color: #ffffff;
 }
 
+img {
+  max-width: 100%;
+}
+
 /********************* HEADER *********************/
 
 .box-top {
@@ -423,4 +427,167 @@ input[type="search"]::placeholder {
 
 .item-nav a:active {
  color: #757b86;
+}
+
+/********************* OpporTunitieS *********************/
+
+.box-opportunities {
+  padding: 55px 0;
+}
+
+.opportunities {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+
+.item-opp {
+  width: 32%;
+  margin-right: 18px;
+}
+
+.item-opp h2 {
+  margin: 26px 0 15px 23px;  
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.item-opp a {
+  width: 135px;
+  display: inline-block;
+  margin-left: 23px;
+  margin-bottom: 22px;
+  padding: 12px 0;  
+  font-size: 14px;
+  line-height: 12px;  
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #000000;
+  opacity: 0.1;
+  }
+
+.item-opp a:hover {
+  opacity: 0.2;
+}
+
+.item-opp a:active {
+  opacity: 0.3;
+}
+
+.yellow {
+  position: relative;
+  background-image: url("/img/icon-1.png");
+  background-repeat: no-repeat;
+  background-position: 85% 50%;
+  background-color: #ffbf47;  
+}
+
+.yellow-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.blue {
+  background-image: url("/img/icon-2.png");
+  background-repeat: no-repeat;
+  background-position: 85% 50%;
+  background-color: #3bbce3;
+}
+
+.purple {
+  background-image: url("/img/icon-3.png");
+  background-repeat: no-repeat;
+  background-position: 85% 50%;
+  background-color: #dc91d8;
+  margin-right: 0;
+}
+
+.green {
+  max-height: 123px;  
+  background-image: url("/img/icon-4.png");
+  background-repeat: no-repeat;
+  background-position: 85% 50%;
+  background-color: #8ed78f;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 0;
+  
+}
+
+.yellow:last-child{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-image: url("/img/icon-1.png");
+  background-repeat: no-repeat;
+  background-position: 85% 50%;
+  margin-right: 0;
+}
+
+.item-slider {
+  display: block;
+  width: 66%;
+  margin-top: 20px;
+  margin-right: 18px;
+  padding: 26px 0 22px 25px;
+  background-image: url("/img/Layer_99_2.jpg");
+  background-repeat: no-repeat;  
+  background-position: 50% 50%;
+  box-sizing: border-box;
+}
+
+.opportunities li:nth-child(5) {
+  display: none;
+  background-image: url("/img/Layer_99.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+  
+
+.item-slider h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.item-slider span {
+  display: block;  
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.item-slider a {
+  display: block;
+  width: 192px;
+  margin-top: 125px;
+  padding: 14px 0;
+  font-size: 14px;
+  line-height: 10px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #ee3643;
+}
+
+.item-slider a:hover {
+  background-color: #ca2c37;
+}
+
+.item-slider a:active {
+  background-color: #ba2732;
 }
