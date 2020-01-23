@@ -1430,8 +1430,7 @@ input[type="search"]::placeholder {
   display: inline-block;
   margin-right: 4px;
   width: 41px;
-  height: 42px;
-  vertical-align: top;
+  height: 42px;  
   background-color: #212a3a;
   border-radius: 50%;
 }
@@ -1450,31 +1449,24 @@ input[type="search"]::placeholder {
 
 .social__link {
   display: inline-block;  
+  width: 41px;
+  height: 42px;  
   text-decoration: none;
 }
 
 .social__link_vk {
-  width: 41px;
-  height: 42px;
-  content: "";
   background-image: url(/img/vk-icon.png);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
 .social__link_fb {
-  width: 41px;
-  height: 42px;
-  content: "";
   background-image: url(/img/fb-icon.png);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
 .social__link_inst {
-  width: 41px;
-  height: 42px;
-  content: "";
   background-image: url(/img/insta-icon.png);
   background-repeat: no-repeat;
   background-position: 50% 50%;
