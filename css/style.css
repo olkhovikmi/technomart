@@ -1797,6 +1797,7 @@ input[type="search"]::placeholder {
   border-radius: 2px;
 }
 
+
 .min-price::placeholder,
 .max-price::placeholder{
   color: #000000;
