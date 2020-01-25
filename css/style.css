@@ -641,7 +641,7 @@ input[type="search"]::placeholder {
   background-color: #ba2732;
 }
 
-/* BOX-GOODS */
+/**************************************** BOX-GOODS ****************************************/
 
 .box-goods {
   margin-bottom: 21px;
@@ -773,7 +773,7 @@ input[type="search"]::placeholder {
   background-position: 50% 50%;
 }
 
-/* BOX-MANUFACTIRER */
+/**************************************** BOX-MANUFACTIRER ****************************************/
 
 .box-manufacturer {
   padding-bottom: 85px;
@@ -1114,7 +1114,7 @@ input[type="search"]::placeholder {
   background-color: #ba2732;
 }
 
-/* SHOP-CONTAINER */
+/**************************************** SHOP-CONTAINER ****************************************/
 
 .shop-container {
   display: flex;
@@ -1260,7 +1260,7 @@ input[type="search"]::placeholder {
   background-color: #ba2732;
 }
 
-/* FOOTER */
+/**************************************** FOOTER ****************************************/
 
 .footer-container_light-blue {
   background-color: #32425c;
@@ -1514,5 +1514,313 @@ input[type="search"]::placeholder {
   text-decoration: none;
 }
 
+/*************************************** CATALOG ***************************************/
 
+.cart-item_red {
+  background-color: #ee3643;
+}
+
+.box-info {
+  width:32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.accaunt { 
+  position: relative;
+  width:100%;
+  margin-bottom: 10px;
+  padding: 14px 0;
+  
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+
+  background-color: #ffffff;
+
+  cursor: pointer;
+}
+
+.accaunt:hover .accaunt__btn::before {
+  background-image: url("/img/icon-user_on.png");
+}
+
+.accaunt:hover .accaunt__btn::after {
+  background-image: url("/img/icon-login.png");
+}
+
+.accaunt:active .accaunt__btn::before {
+  background-image: url("/img/icon-user.png");
+}
+
+.accaunt:active .accaunt__btn::after {
+  background-image: url("/img/icon-logout_off.png");
+}
+
+.accaunt__btn:active {
+  color: #c4c4c4;
+}
+
+.accaunt__btn {  
+  color: #000000;
+  text-decoration: none;
+}
+
+.accaunt__btn::before {
+  position: absolute;
+  display: inline-block;  
+  top: 13px;
+  left: 13px;
+  width: 20px;
+  height: 18px;
+  content: "";
+  background-image: url("/img/icon-user.png");
+  background-repeat: no-repeat;
+}
+
+.accaunt__btn::after {
+  position: absolute;
+  display: inline-block;  
+  top: 14px;
+  right: 10px;
+  width: 20px;
+  height: 18px;
+  content: "";
+  background-image: url("/img/icon-logout_off.png");
+  background-repeat: no-repeat;
+}
+
+.kabinet__link {
+  color: #32425c;  
+  font-size: 16px;
+  line-height: 14px;
+}
+
+.kabinet__link:hover {
+  color: #ee3643;
+}
+
+.kabinet__link:active {
+  color:#c8cfd6;
+}
+
+.kabinet__link:first-child {
+  margin-left: 17px;
+}
+
+.kabinet__link:first-child::after {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  content: "";
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 2px;
+  
+  background-color: #32425c;
+  border-radius: 50%;
+}
+/*************************************** CATALOG-MAIN ***************************************/
+.puncher {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 21px;
+  padding-bottom: 21px;
+}
+
+.catalog {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog__item:not(:last-child)::after{
+  display: inline-block;
+  width: 8px;
+  height: 12px;
+  margin-left: 15px;
+  margin-right: 15px;
+  content: "";
+
+  background-image: url(/img/icon-right-small.png);
+}
+
+.catalog__link {
+  color: #000000;
+  font-family: "PT Sans",sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 9px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.puncher__title {
+  margin-top: 25px;
+  margin-bottom: 0;
+  padding: 32px 0 32px 30px;
+  color: #32425c;
+  font-family: Cuprum;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  border-radius: 2px;
+  background-color: #f2f6f8;
+}
+
+/**************************************** PAGE ****************************************/
+.container-goods {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 24%;
+  margin-right: 20px;
+}
+
+.filter__title {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 14px 0 14px 18px;
+
+  color: #000000;
+  font-family: "PT Sans",sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 9px;
+  text-transform: uppercase;
+
+  background-color: #f7f3ec;
+
+  border-radius: 2px;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.form-sale {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form-sale__title {
+  margin-bottom: 21px;
+
+  color: #000000;
+  font-family: "PT Sans",sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+.box-control {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 39px 0;
+
+  border-radius: 2px;
+  background-color: #f7f3ec;
+}
+
+.line_grey {  
+  width: 180px;
+  height: 2px;
+  margin-left: 20px;
+
+  background-color: #d7dcde;
+}
+
+.line_green {  
+  width: 152px;
+  height: 2px;
+
+  background-color: #00ca74;
+}
+
+.circle_one {
+  position: absolute;
+  top:30px;
+  left: 20px;
+  width: 22px;
+  height: 22px;
+
+  background-color: #ffffff;
+
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.circle_two {
+  position: absolute;
+  top:30px;
+  right: 40px;
+  width: 22px;
+  height: 22px;
+
+  background-color: #ffffff;
+
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.circle_small {
+  width: 5px;
+  height: 5px;
+  margin: 8px;
+
+  background-color: #ababab;
+
+  border-radius: 50%;
+}
+
+.min-price,
+.max-price {
+  width: 40%;
+  padding: 12px 0;
+
+  text-align: center;
+
+  background-color: #f7f3ec;
+
+  border: none;
+  border-radius: 2px;
+}
+
+.min-price::placeholder,
+.max-price::placeholder{
+  color: #000000;
+  font-family: "PT Sans",sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 12px;  
+}
+
+.hyphen {
+  display: inline-block;
+  width: 10px;
+  height: 1px;
+  margin-left: 13px;
+  margin-right: 13px;
+  
+  background-color: #444444;
+}
 
