@@ -66,14 +66,19 @@ img {
 
 .visually-hidden {
   position: absolute;
-  width: 1px;
+  /*   width: 1px;
   height: 1px;
-  clip: rect(0, 0, 0, 0);
+  clip: rect(0, 0, 0, 0); */
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .wrap {
   max-width: 940px;
   margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /********************* HEADER *********************/
@@ -1283,9 +1288,9 @@ input[type="search"]::placeholder {
   width: 220px;
   margin-right: 170px;
   padding: 22px 0;
-  
-  
-  font-size: 30px;  
+
+
+  font-size: 30px;
   font-weight: 400;
   line-height: 23px;
   text-align: center;
@@ -1373,12 +1378,12 @@ input[type="search"]::placeholder {
 
 .footer-submenu__item {
   margin-right: 60px;
-  font-size: 18px;  
+  font-size: 18px;
   line-height: 18px;
 }
 
 .footer-submenu__item:last-child {
-  margin-right: 0;  
+  margin-right: 0;
 }
 
 .footer-submune__link {
@@ -1391,10 +1396,10 @@ input[type="search"]::placeholder {
 
 }
 
-.footer-submune__link:active {  
+.footer-submune__link:active {
   color: #f1f5f7;
   opacity: 0.5;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 .footer-container_blue {
@@ -1405,7 +1410,7 @@ input[type="search"]::placeholder {
 
 .footer-down {
   display: flex;
-  justify-content: flex-start;  
+  justify-content: flex-start;
 }
 
 .watermark {
@@ -1430,7 +1435,7 @@ input[type="search"]::placeholder {
   display: inline-block;
   margin-right: 4px;
   width: 41px;
-  height: 42px;  
+  height: 42px;
   background-color: #212a3a;
   border-radius: 50%;
 }
@@ -1448,9 +1453,9 @@ input[type="search"]::placeholder {
 }
 
 .social__link {
-  display: inline-block;  
+  display: inline-block;
   width: 41px;
-  height: 42px;  
+  height: 42px;
   text-decoration: none;
 }
 
@@ -1484,7 +1489,7 @@ input[type="search"]::placeholder {
   line-height: 18px;
 }
 
-.footer-email__item:last-child{
+.footer-email__item:last-child {
   margin-right: 0;
 }
 
@@ -1513,18 +1518,18 @@ input[type="search"]::placeholder {
 }
 
 .box-info {
-  width:32%;
+  width: 32%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
-.accaunt { 
+.accaunt {
   position: relative;
-  width:100%;
+  width: 100%;
   margin-bottom: 10px;
   padding: 14px 0;
-  
+
   font-size: 21px;
   line-height: 21px;
   text-align: center;
@@ -1554,14 +1559,14 @@ input[type="search"]::placeholder {
   color: #c4c4c4;
 }
 
-.accaunt__btn {  
+.accaunt__btn {
   color: #000000;
   text-decoration: none;
 }
 
 .accaunt__btn::before {
   position: absolute;
-  display: inline-block;  
+  display: inline-block;
   top: 13px;
   left: 13px;
   width: 20px;
@@ -1573,7 +1578,7 @@ input[type="search"]::placeholder {
 
 .accaunt__btn::after {
   position: absolute;
-  display: inline-block;  
+  display: inline-block;
   top: 14px;
   right: 10px;
   width: 20px;
@@ -1584,7 +1589,7 @@ input[type="search"]::placeholder {
 }
 
 .kabinet__link {
-  color: #32425c;  
+  color: #32425c;
   font-size: 16px;
   line-height: 14px;
 }
@@ -1594,7 +1599,7 @@ input[type="search"]::placeholder {
 }
 
 .kabinet__link:active {
-  color:#c8cfd6;
+  color: #c8cfd6;
 }
 
 .kabinet__link:first-child {
@@ -1609,10 +1614,11 @@ input[type="search"]::placeholder {
   margin-left: 15px;
   margin-right: 15px;
   margin-bottom: 2px;
-  
+
   background-color: #32425c;
   border-radius: 50%;
 }
+
 /*************************************** CATALOG-MAIN ***************************************/
 .puncher {
   display: flex;
@@ -1628,23 +1634,27 @@ input[type="search"]::placeholder {
   width: 100%;
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
-.catalog__item:not(:last-child)::after{
+
+.catalog__item:not(:last-child)::after {
   display: inline-block;
   width: 8px;
   height: 12px;
-  margin-left: 15px;
   margin-right: 15px;
+  margin-left: 15px;
+
   content: "";
 
   background-image: url(/img/icon-right-small.png);
+  background-repeat: no-repeat;
 }
 
 .catalog__link {
   color: #000000;
-  font-family: "PT Sans",sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 9px;
@@ -1656,6 +1666,7 @@ input[type="search"]::placeholder {
   margin-top: 25px;
   margin-bottom: 0;
   padding: 32px 0 32px 30px;
+
   color: #32425c;
   font-family: Cuprum;
   font-size: 30px;
@@ -1688,7 +1699,7 @@ input[type="search"]::placeholder {
   padding: 14px 0 14px 18px;
 
   color: #000000;
-  font-family: "PT Sans",sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 9px;
@@ -1708,15 +1719,19 @@ input[type="search"]::placeholder {
 
 .form-sale {
   margin: 0;
+  margin-bottom: 25px;
   padding: 0;
+  padding-bottom: 25px;
+
   border: none;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .form-sale__title {
   margin-bottom: 21px;
 
   color: #000000;
-  font-family: "PT Sans",sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 17px;
   font-weight: 700;
   line-height: 25px;
@@ -1733,7 +1748,7 @@ input[type="search"]::placeholder {
   background-color: #f7f3ec;
 }
 
-.line_grey {  
+.line_grey {
   width: 180px;
   height: 2px;
   margin-left: 20px;
@@ -1741,7 +1756,7 @@ input[type="search"]::placeholder {
   background-color: #d7dcde;
 }
 
-.line_green {  
+.line_green {
   width: 152px;
   height: 2px;
 
@@ -1750,7 +1765,7 @@ input[type="search"]::placeholder {
 
 .circle_one {
   position: absolute;
-  top:30px;
+  top: 30px;
   left: 20px;
   width: 22px;
   height: 22px;
@@ -1763,7 +1778,7 @@ input[type="search"]::placeholder {
 
 .circle_two {
   position: absolute;
-  top:30px;
+  top: 30px;
   right: 40px;
   width: 22px;
   height: 22px;
@@ -1799,12 +1814,12 @@ input[type="search"]::placeholder {
 
 
 .min-price::placeholder,
-.max-price::placeholder{
+.max-price::placeholder {
   color: #000000;
-  font-family: "PT Sans",sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 17px;
   font-weight: 400;
-  line-height: 12px;  
+  line-height: 12px;
 }
 
 .hyphen {
@@ -1813,7 +1828,197 @@ input[type="search"]::placeholder {
   height: 1px;
   margin-left: 13px;
   margin-right: 13px;
-  
+  margin-bottom: 5px;
+
   background-color: #444444;
 }
 
+.manufacturers {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+
+
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.manufacturers__title {
+  margin-bottom: 25px;
+
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.manufacturers__item {
+  display: block;
+  position: relative;
+  margin-left: 25px;
+  margin-bottom: 25px;
+  padding-left: 10px;
+
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+
+.manufacturers__bosh::before,
+.manufacturers__inter::before,
+.manufacturers__makita::before,
+.manufacturers__dewalt::before,
+.manufacturers__hitachi::before {
+  position: absolute;
+  top: -2px;
+  left: -25px;
+  display: block;
+  content: "";
+
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/checkbox-off.png");
+  background-repeat: no-repeat;
+  opacity: 0.7;
+}
+
+.manufacturers__bosh:hover::before,
+.manufacturers__inter:hover::before,
+.manufacturers__makita:hover::before,
+.manufacturers__dewalt:hover::before,
+.manufacturers__hitachi:hover::before {
+  opacity: 1;
+}
+
+.manufacturers__bosh:disabled::before,
+.manufacturers__inter:disabled::before,
+.manufacturers__makita:disabled::before,
+.manufacturers__dewalt:disabled::before,
+.manufacturers__hitachi:disabled::before {
+  opacity: 0.3;
+}
+
+#bosh:checked~.manufacturers__brand .manufacturers__bosh::before,
+#inter:checked~.manufacturers__brand .manufacturers__inter::before,
+#makita:checked~.manufacturers__brand .manufacturers__makita::before,
+#dewalt:checked~.manufacturers__brand .manufacturers__dewalt::before,
+#hitachi:checked~.manufacturers__brand .manufacturers__hitachi::before {
+  background-image: url("../img/checkbox-on.png");
+  background-repeat: no-repeat;
+}
+
+#bosh:checked:disabled~.manufacturers__brand .manufacturers__bosh::before,
+#inter:checked:disabled~.manufacturers__brand .manufacturers__inter::before,
+#makita:checked:disabled~.manufacturers__brand .manufacturers__makita::before,
+#dewalt:checked:disabled~.manufacturers__brand .manufacturers__dewalt::before,
+#hitachi:checked:disabled~.manufacturers__brand .manufacturers__hitachi::before {
+  opacity: 0.3;
+}
+
+.power {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.power__title {
+  margin-bottom: 25px;
+
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05px;
+}
+
+.power__item {
+  display: block;
+  margin-left: 25px;
+  padding-left: 10px;
+
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+
+.power__akk {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.power__net {
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.power__akk::before,
+.power__net::before {
+  position: absolute;
+  top: -3px;
+  left: -25px;
+  display: block;
+  content: "";
+  width: 25px;
+  height: 25px;
+
+  background-image: url("../img/radio-off.png");
+
+  opacity: 0.5;
+}
+
+.power__akk:hover::before,
+.power__net:hover::before {
+  opacity: 1;
+}
+
+#battery:checked~.box-power .power__akk::before,
+#network-power:checked~.box-power .power__net::before {
+  background-image: url("../img/radio-on.png");
+}
+
+#battery:disabled~.box-power .power__akk::before,
+#network-power:disabled~.box-power .power__net::before {
+  opacity: 0.3;
+}
+
+#battery:checked:disabled~.box-power .power__akk::before,
+#network-power:checked:disabled~.box-power .power__net::before {
+  opacity: 0.3;
+}
+
+.form__btn {
+  max-width: 140px;
+  padding: 14px 0;
+
+  color: #000000;
+  font-family: "PT Sans",sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+
+  outline: none;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  background-color: #ffffff;
+
+  cursor: pointer;
+}
+.form__btn:hover {
+  border: 1px solid #bdc6ca;  
+}
+
+.form__btn:active {
+  border: 1px solid #ee3643;
+}

@@ -96,9 +96,35 @@
 									<input type="text" class="min-price" placeholder="0">
 									<span class="hyphen"></span>
 									<input type="text" class="max-price" placeholder="3000">
-									
 								</div>
 							</fieldset>
+
+							<fieldset class="manufacturers">
+								<legend class="manufacturers__title">ПРОИЗВОДИТЕЛИ:</legend>
+								<input id="bosh" type="checkbox" class="visually-hidden" name="bosh" checked>
+								<input id="inter" type="checkbox" class="visually-hidden" name="inter">
+								<input id="makita" type="checkbox" class="visually-hidden" name="makita" checked>
+								<input id="dewalt" type="checkbox" class="visually-hidden" name="dewalt">
+								<input id="hitachi" type="checkbox" class="visually-hidden" name="hitachi" disabled checked>
+								<div class="manufacturers__brand">
+									<label for="bosh" class="manufacturers__item  manufacturers__bosh ">BOSCH</label>
+									<label for="inter" class=" manufacturers__item manufacturers__inter">ИНТЕРСКОЛ</label>
+									<label for="makita" class=" manufacturers__item manufacturers__makita">MAKIta</label>
+									<label for="dewalt" class=" manufacturers__item manufacturers__dewalt">Dewalt</label>
+									<label for="hitachi" class=" manufacturers__item manufacturers__hitachi">Hitachi</label>
+								</div>
+							</fieldset>
+
+							<fieldset class="power">
+								<legend class="power__title">ПИТАНИЕ:</legend>
+								<input class="visually-hidden" type="radio" name="power" id="battery" checked>
+								<input class="visually-hidden" type="radio" name="power" id="network-power">
+								<div class="box-power">
+									<label for="battery" class="power__item power__akk">Аккумуляторные</label>
+									<label for="network-power" class=" power__item power__net">Сетевые</label>
+								</div>
+							</fieldset>
+							<button class="form__btn">Показать</button>
 						</form>
 					</section>
 				</div>
