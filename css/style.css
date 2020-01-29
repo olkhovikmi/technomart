@@ -1679,21 +1679,29 @@ input[type="search"]::placeholder {
 }
 
 /**************************************** PAGE ****************************************/
-.container-goods {
+
+.page {
   display: flex;
   justify-content: flex-start;
+
+}
+
+.container-goods {
+  width: 24%;
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 20px;
 }
 
 .filter {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 24%;
-  margin-right: 20px;
+  width: 100%;
+  
 }
 
 .filter__title {
-  width: 100%;
   margin: 0;
   margin-bottom: 20px;
   padding: 14px 0 14px 18px;
@@ -1826,8 +1834,8 @@ input[type="search"]::placeholder {
   display: inline-block;
   width: 10px;
   height: 1px;
-  margin-left: 13px;
-  margin-right: 13px;
+  margin-left: 12px;
+  margin-right: 12px;
   margin-bottom: 5px;
 
   background-color: #444444;
@@ -2021,4 +2029,99 @@ input[type="search"]::placeholder {
 
 .form__btn:active {
   border: 1px solid #ee3643;
+}
+
+.grid-goods {
+  width: 76%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.sorting {
+  width: 100%;
+  padding: 9px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items:center;
+
+  background-color: #f7f3ec;
+  border-radius: 2px;  
+}
+
+.sorting__title {
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 140px;
+
+  color: #000000;
+  font-family: "PT Sans",sans-serif;
+  font-size: 13px;
+  font-weight: 400;  
+}
+
+.box-type {
+  display: flex;
+  justify-content: flex-start;
+  
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.box-type__item {
+  margin-right: 60px;
+}
+
+.box-type__item:nth-child(4) {
+  margin-right: 17px;
+}
+
+
+
+.box-type__link:not(.box-type__item_up):not(.box-type__item_down) {
+  display: inline-block;
+
+  color:#adaaa5;
+  font-family: "PT Sans",sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  border-bottom: 1px dotted #ee3643;
+}
+
+.box-type__link_red {
+  color: #ee3643;
+  font-family: "PT Sans",sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;  
+}
+
+.box-type__link:not(.box-type__link_red):not(.box-type__item_up):not(.box-type__item_down):hover {
+  color: #000000;
+  border-bottom: 1px solid #ee3643;
+}
+
+.box-type__item_up {
+  display: inline-block;
+  margin-right: 10px;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  border-bottom: 10px solid #ee3643;
+}
+
+.box-type__item_down {
+  display: inline-block;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  border-top: 10px solid #c5c5c5;
+}
+
+.box-type__item_down:hover {
+  border-top: 10px solid #231f20;
 }
