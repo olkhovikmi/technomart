@@ -1736,7 +1736,8 @@ input[type="search"]::placeholder {
 .pop-up__title {
   position: relative;
   margin-top: 0;
-  margin-bottom: 110px; 
+  margin-bottom: 110px;
+  margin-left: 80px; 
 
   font-family: "Cuprum", sans-serif;
   font-size: 30px;
@@ -1748,8 +1749,8 @@ input[type="search"]::placeholder {
 
 .pop-up__title::before {
   position: absolute;
-  top: -10px;
-  left: 45px;
+  top: -15px;
+  left: -10px;
   display: block;
   content: "";
   width: 66px;
