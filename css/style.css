@@ -1724,8 +1724,7 @@ input[type="search"]::placeholder {
   left: 160px;
   width: 620px;
   padding-top: 55px;
-  padding-bottom: 35px;
-
+  
   background-color: #ffffff;
   border-top: 7px solid #ee3643;
   box-shadow: 0px 20px 40px 0px rgba(41, 52, 73, 0.75);
@@ -1733,10 +1732,51 @@ input[type="search"]::placeholder {
   box-sizing: border-box;
 }
 
+.container-popup {
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: -45px;
+  right: 20px;
+}
+
+.close__btn {    
+  position: relative;
+  padding: 0;
+  width: 3px;
+  height: 21px;
+
+  transform: rotate(45deg);
+
+  background-color: #ee3643;
+  border: none;  
+  outline: none;  
+
+  cursor: pointer;
+}
+
+.close__btn::before {  
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  content: "";
+  width: 3px;
+  height: 21px;
+
+  transform: rotate(-90deg);
+
+  background-color: #ee3643;
+  border: none;
+  outline: none;  
+}
+
 .pop-up__title {
   position: relative;
   margin-top: 0;
-  margin-bottom: 110px;
+  margin-bottom: 80px;
   margin-left: 80px; 
 
   font-family: "Cuprum", sans-serif;
@@ -1750,7 +1790,7 @@ input[type="search"]::placeholder {
 .pop-up__title::before {
   position: absolute;
   top: -15px;
-  left: -10px;
+  left: 0;
   display: block;
   content: "";
   width: 66px;
@@ -1759,9 +1799,71 @@ input[type="search"]::placeholder {
   background-image: url("/img/form-enable.png");
 }
 
-.holder-btn {
-  text-align: center;
+.close__btn:hover,
+.close__btn:hover::before {
+  background-color: #ca2c37;
 }
+
+.close__btn:active,
+.close__btn:active::before {
+  background-color: #ba2732;
+}
+
+.holder-btn {
+  padding: 35px 0;
+
+  text-align: center;
+
+  background-color: #f1f1f1;
+}
+
+.holder-btn__order {
+  display: inline-block;
+  width: 220px;
+  margin-right: 20px;
+  padding: 12px 0;
+
+  font-size: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  
+  background-color: #ee3643;
+  border-radius: 5px;
+}
+
+.holder-btn__order:hover {
+  background-color: #ca2c37;
+}
+
+.holder-btn__order:active {
+  background-color: #ba2732;
+}
+
+.holder-btn__purchase {  
+  width: 220px;  
+  padding: 12px 0;
+
+  font-size: 14px;
+  color: #000000;
+  text-transform: uppercase;  
+  
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+.holder-btn__purchase:hover {
+  background-color: #dddbdbd0;
+}
+
+.holder-btn__purchase:active{
+  background-color: #ccc9c9;
+}
+
 
 .puncher {
   display: -webkit-box;
