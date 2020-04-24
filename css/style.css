@@ -1,48 +1,48 @@
 /* Подключение шрифтов */
 @font-face {
   font-family: "Cuprum";
-  src: url("/fonts/cuprum.woff2") format("woff2"),
-    url("/fonts/cuprum.woff") format("woff");
+  src: url("../fonts/cuprum.woff2") format("woff2"),
+    url("../fonts/cuprum.woff") format("woff");
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Cuprum";
-  src: url("/fonts/cuprumbold.woff2") format("woff2"),
-    url("/fonts/cuprumbold.woff") format("woff");
+  src: url("../fonts/cuprumbold.woff2") format("woff2"),
+    url("../fonts/cuprumbold.woff") format("woff");
   font-style: normal;
   font-weight: 700;
 }
 
 @font-face {
   font-family: "Cuprum";
-  src: url("/fonts/cuprumbolditalic.woff2") format("woff2"),
-    url("/fonts/cuprumbolditalic.woff") format("woff");
+  src: url("../fonts/cuprumbolditalic.woff2") format("woff2"),
+    url("../fonts/cuprumbolditalic.woff") format("woff");
   font-style: italic;
   font-weight: 700;
 }
 
 @font-face {
   font-family: "Cuprum";
-  src: url("/fonts/cuprumitalic.woff2") format("woff2"),
-    url("/fonts/cuprumitalic.woff") format("woff");
+  src: url("../fonts/cuprumitalic.woff2") format("woff2"),
+    url("../fonts/cuprumitalic.woff") format("woff");
   font-style: italic;
   font-weight: 400;
 }
 
 @font-face {
   font-family: "PTSans";
-  src: url("/fonts/ptsans.woff2") format("woff2"),
-    url("/fonts/ptsans.woff") format("woff");
+  src: url("../fonts/ptsans.woff2") format("woff2"),
+    url("../fonts/ptsans.woff") format("woff");
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: "PTSans";
-  src: url("/fonts/ptsansbold.woff2") format("woff2"),
-    url("/fonts/ptsansbold.woff") format("woff");
+  src: url("../fonts/ptsansbold.woff2") format("woff2"),
+    url("../fonts/ptsansbold.woff") format("woff");
   font-style: normal;
   font-weight: 700;
 }
@@ -151,7 +151,7 @@ img {
   left: 18px;
   width: 17px;
   height: 17px;
-  background-image: url("/img/icon-search.png");
+  background-image: url("../img/icon-search.png");
   background-repeat: no-repeat;
   opacity: 0.3;
 }
@@ -174,7 +174,7 @@ input[type="search"]:hover+label {
 }
 
 input[type="search"]:focus+label {
-  background-image: url("/img/icon-search-red.png");
+  background-image: url("../img/icon-search-red.png");
   background-repeat: no-repeat;
 }
 
@@ -240,7 +240,7 @@ input[type="search"]::placeholder {
   left: 10px;
   width: 14px;
   height: 16px;
-  background-image: url("/img/icon-bookmark_копия_3.png");
+  background-image: url("../img/icon-bookmark_копия_3.png");
   background-repeat: no-repeat;
   opacity: 0.3;
 }
@@ -270,7 +270,7 @@ input[type="search"]::placeholder {
   left: 10px;
   width: 14px;
   height: 16px;
-  background-image: url("/img/cart-icon_копия_2.png");
+  background-image: url("../img/cart-icon_копия_2.png");
   background-repeat: no-repeat;
   opacity: 0.3;
 }
@@ -375,7 +375,7 @@ input[type="search"]::placeholder {
   width: 19px;
   height: 19px;
   content: "";
-  background-image: url("/img/icon-phone.png");
+  background-image: url("../img/icon-phone.png");
   background-repeat: no-repeat;
 }
 
@@ -421,7 +421,7 @@ input[type="search"]::placeholder {
   width: 20px;
   height: 17px;
   content: "";
-  background-image: url("/img/icon-login.png");
+  background-image: url("../img/icon-login.png");
   background-repeat: no-repeat;
   opacity: 0.3;
 }
@@ -546,7 +546,7 @@ input[type="search"]::placeholder {
 
 .yellow {
   position: relative;
-  background-image: url("/img/icon-1.png");
+  background-image: url("../img/icon-1.png");
   background-repeat: no-repeat;
   background-position: 85% 50%;
   background-color: #ffbf47;
@@ -559,14 +559,14 @@ input[type="search"]::placeholder {
 }
 
 .blue {
-  background-image: url("/img/icon-2.png");
+  background-image: url("../img/icon-2.png");
   background-repeat: no-repeat;
   background-position: 85% 50%;
   background-color: #3bbce3;
 }
 
 .purple {
-  background-image: url("/img/icon-3.png");
+  background-image: url("../img/icon-3.png");
   background-repeat: no-repeat;
   background-position: 85% 50%;
   background-color: #dc91d8;
@@ -575,7 +575,7 @@ input[type="search"]::placeholder {
 
 .green {
   max-height: 123px;
-  background-image: url("/img/icon-4.png");
+  background-image: url("../img/icon-4.png");
   background-repeat: no-repeat;
   background-position: 85% 50%;
   background-color: #8ed78f;
@@ -589,7 +589,7 @@ input[type="search"]::placeholder {
   position: absolute;
   right: 0;
   bottom: 0;
-  background-image: url("/img/icon-1.png");
+  background-image: url("../img/icon-1.png");
   background-repeat: no-repeat;
   background-position: 85% 50%;
   margin-right: 0;
@@ -607,7 +607,7 @@ input[type="search"]::placeholder {
   width: 20px;
   height: 40px;
   margin-right: 530px;
-  background-image: url("/img/icon-left.png");
+  background-image: url("../img/icon-left.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   cursor: pointer;
@@ -617,7 +617,7 @@ input[type="search"]::placeholder {
   display: inline-block;
   width: 20px;
   height: 40px;
-  background-image: url("/img/icon-right.png");
+  background-image: url("../img/icon-right.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   cursor: pointer;
@@ -634,7 +634,7 @@ input[type="search"]::placeholder {
   margin-top: 20px;
   margin-right: 18px;
   padding: 26px 0 22px 25px;
-  background-image: url("/img/Layer_99_2.jpg");
+  background-image: url("../img/Layer_99_2.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   box-sizing: border-box;
@@ -642,7 +642,7 @@ input[type="search"]::placeholder {
 
 .opportunities li:nth-child(5) {
   display: none;
-  background-image: url("/img/Layer_99.jpg");
+  background-image: url("../img/Layer_99.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -824,7 +824,7 @@ input[type="search"]::placeholder {
   line-height: 12px;
   text-align: center;
   text-transform: uppercase;
-  background-image: url("/img/btn_red.png");
+  background-image: url("../img/btn_red.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -1071,7 +1071,7 @@ input[type="search"]::placeholder {
 
   list-style: none;
 
-  background-image: url("/img/Layer_131.png");
+  background-image: url("../img/Layer_131.png");
   background-repeat: no-repeat;
   background-position: 100% 30px;
 }
@@ -1090,7 +1090,7 @@ input[type="search"]::placeholder {
 
   list-style: none;
 
-  background-image: url("/img/Layer_130.png");
+  background-image: url("../img/Layer_130.png");
   background-repeat: no-repeat;
   background-position: 100% 0px;
 }
@@ -1109,7 +1109,7 @@ input[type="search"]::placeholder {
 
   list-style: none;
 
-  background-image: url("/img/Layer_119.png");
+  background-image: url("../img/Layer_119.png");
   background-repeat: no-repeat;
   background-position: 100% 0px;
 
@@ -1547,19 +1547,19 @@ input[type="search"]::placeholder {
 }
 
 .social__link_vk {
-  background-image: url(/img/vk-icon.png);
+  background-image: url(../img/vk-icon.png);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
 .social__link_fb {
-  background-image: url(/img/fb-icon.png);
+  background-image: url(../img/fb-icon.png);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
 .social__link_inst {
-  background-image: url(/img/insta-icon.png);
+  background-image: url(../img/insta-icon.png);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -1633,19 +1633,19 @@ input[type="search"]::placeholder {
 }
 
 .accaunt:hover .accaunt__btn::before {
-  background-image: url("/img/icon-user_on.png");
+  background-image: url("../img/icon-user_on.png");
 }
 
 .accaunt:hover .accaunt__btn::after {
-  background-image: url("/img/icon-login.png");
+  background-image: url("../img/icon-login.png");
 }
 
 .accaunt:active .accaunt__btn::before {
-  background-image: url("/img/icon-user.png");
+  background-image: url("../img/icon-user.png");
 }
 
 .accaunt:active .accaunt__btn::after {
-  background-image: url("/img/icon-logout_off.png");
+  background-image: url("../img/icon-logout_off.png");
 }
 
 .accaunt__btn:active {
@@ -1665,7 +1665,7 @@ input[type="search"]::placeholder {
   width: 20px;
   height: 18px;
   content: "";
-  background-image: url("/img/icon-user.png");
+  background-image: url("../img/icon-user.png");
   background-repeat: no-repeat;
 }
 
@@ -1677,7 +1677,7 @@ input[type="search"]::placeholder {
   width: 20px;
   height: 18px;
   content: "";
-  background-image: url("/img/icon-logout_off.png");
+  background-image: url("../img/icon-logout_off.png");
   background-repeat: no-repeat;
 }
 
@@ -1796,7 +1796,7 @@ input[type="search"]::placeholder {
   width: 66px;
   height: 66px;
 
-  background-image: url("/img/form-enable.png");
+  background-image: url("../img/form-enable.png");
 }
 
 .close__btn:hover,
@@ -1899,7 +1899,7 @@ input[type="search"]::placeholder {
 
   content: "";
 
-  background-image: url(/img/icon-right-small.png);
+  background-image: url(../img/icon-right-small.png);
   background-repeat: no-repeat;
 }
 
@@ -2523,7 +2523,7 @@ input[type="search"]::placeholder {
   height: 15px;
   content: "";
 
-  background-image: url("/img/cart-icon_копия_2.png");
+  background-image: url("../img/cart-icon_копия_2.png");
   opacity: 0.3;  
 }
 
@@ -2629,7 +2629,7 @@ input[type="search"]::placeholder {
   font-weight: 700;
   text-decoration: none;
 
-  background-image: url("/img/btn_red.png");
+  background-image: url("../img/btn_red.png");
   background-repeat: no-repeat;
 }
 
