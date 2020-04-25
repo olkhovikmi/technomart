@@ -1719,6 +1719,7 @@ input[type="search"]::placeholder {
 }
 
 .pop-up {
+  display: none;
   position: absolute;
   top: 90px;
   left: 160px;
